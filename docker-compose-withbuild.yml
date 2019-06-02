@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web1:
+    build:
+      context: .
+      dockerfile: web1.Dockerfile
+    ports:
+      - 80:80
+
+  web2:
+    build:
+      context: .
+      dockerfile: web2.Dockerfile
+    ports:
+      - 90:80
